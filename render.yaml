@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: food-recipe-frontend
+    runtime: static
+    buildCommand: npm run build
+    publishDir: dist
+    envVars:
+      - key: NODE_ENV
+        value: production
